@@ -1,5 +1,4 @@
 version: '3.4'
-
 services:
   agent:
     image: "gcr.io/datadoghq/agent:7.34.0"
@@ -11,7 +10,7 @@ services:
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
       - DD_PROCESS_AGENT_ENABLED=true
       - DD_TAGS=env:lab source:docker project:workshop role:application
-      - DD_LOG_LEVEL=OFF
+      - DD_LOG_LEVEL=WARN
       - DD_DOGSTATSD_NON_LOCAL_TRAFFIC=true
       - DD_TRACE_METHODS=Worker.Service.Worker[DoWork]
     ports:
@@ -28,16 +27,11 @@ services:
     depends_on:
       - agent
     container_name: worker-service
-    ports:
-      - 5001:80
-      - 9090:9090
     labels:
       com.datadoghq.ad.logs: >-
         [{
           "source": "csharp"
         }]
-      squad: customer
-      tribe: workers
       com.datadoghq.tags.service: worker-service
       com.datadoghq.tags.env: lab
       com.datadoghq.tags.version: 1.2
@@ -50,4 +44,3 @@ services:
       - DD_TRACE_METHODS=Worker.Service.Worker[DoWork]
     volumes:
       - /var/run/datadog:/var/run/datadog:ro
-      - ./logs/:/var/log/datadog/dotnet/
