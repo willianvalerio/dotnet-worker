@@ -27,19 +27,17 @@ namespace Worker.Service
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                DoWork();
+                await DoWork();
             }
         }
 
-        public void DoWork()
+        public async Task DoWork()
         {
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             Interlocked.Increment(ref loop);
             _logger.LogInformation($"Worker printing number: {loop}");
             HttpResponseMessage response = HttpClient.GetAsync("https://httpbin.org/get").Result;
-            Thread.Sleep(1000 * 5);
+            await Task.Delay(100 * 2);
             HttpResponseMessage response2 = HttpClient.PostAsync("https://httpbin.org/post", new StringContent("")).Result;
-            Thread.Sleep(1000 * 5);
         }
     }
 }
