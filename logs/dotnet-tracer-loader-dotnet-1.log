@@ -1,0 +1,16 @@
+[2022-04-01 18:39:56.124 +00:00] Total number of assemblies: 2
+[2022-04-01 18:39:56.132 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:43:59.440 +00:00] Total number of assemblies: 2
+[2022-04-01 18:43:59.446 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:47:21.137 +00:00] Total number of assemblies: 2
+[2022-04-01 18:47:21.144 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:47:37.748 +00:00] Total number of assemblies: 2
+[2022-04-01 18:47:37.755 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:49:41.777 +00:00] Total number of assemblies: 2
+[2022-04-01 18:49:41.784 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:50:45.989 +00:00] Total number of assemblies: 2
+[2022-04-01 18:50:45.995 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:52:30.128 +00:00] Total number of assemblies: 2
+[2022-04-01 18:52:30.135 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
+[2022-04-01 18:54:07.067 +00:00] Total number of assemblies: 2
+[2022-04-01 18:54:07.075 +00:00] Loading /opt/datadog/netcoreapp3.1/Datadog.Trace.dll with DependencyLoadContext.LoadFromAssemblyPath
